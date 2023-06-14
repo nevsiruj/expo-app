@@ -1,7 +1,7 @@
-/* Responsive styles */
-@media (max-width: 767px) {
+/* Ajuste de los estilos para dispositivos pequeños */
+@media (max-width: 768px) {
   .hidden {
-    display: none !important;
+    display: none;
   }
 }
 
