@@ -1,23 +1,40 @@
 <div class="bg-gray-800 text-white px-3 py-3 flex items-center justify-between">
   <div>
-      <span class="text-xl font-bold">Mi sitio web</span>
+    <span class="text-xl font-bold">Mi sitio web</span>
   </div>
 
   <!-- Icono de menú tipo hamburguesa -->
   <div class="md:hidden">
     <button (click)="toggleNav()">
-
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path ngIf="!navOpen" fill-rule="evenodd" clip-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-              <path ngIf="navOpen" fill-rule="evenodd" clip-rule="evenodd" d="M4.293 4.293a1 1 0 0 1 1.414 0L12 10.586l6.293-6.293a1 1 0 1 1 1.414 1.414L12 12.414l-7.707-7.707a1 1 0 0 1 0-1.414z"></path>
-          </svg>
-      </button>
+      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+        <path
+          ngIf="!navOpen"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+        ></path>
+        <path
+          ngIf="navOpen"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4.293 4.293a1 1 0 0 1 1.414 0L12 10.586l6.293-6.293a1 1 0 1 1 1.414 1.414L12 12.414l-7.707-7.707a1 1 0 0 1 0-1.414z"
+        ></path>
+      </svg>
+    </button>
   </div>
 
   <!-- Links -->
-  <div class="md:flex" [ngClass]="{'hidden': !navOpen}">
-      <a class="block md:inline-block mt-4 md:mt-0 md:ml-6" routerLink="/">Inicio</a>
-      <a class="block md:inline-block mt-4 md:mt-0 md:ml-6" routerLink="/acerca-de">Acerca de</a>
-      <a class="block md:inline-block mt-4 md:mt-0 md:ml-6" routerLink="/contacto">Contacto</a>
+  <div class="md:flex" [ngClass]="{ hidden: !navOpen }">
+    <a class="block md:inline-block mt-4 md:mt-0 md:ml-6" routerLink="/"
+      >Inicio</a
+    >
+    <a
+      class="block md:inline-block mt-4 md:mt-0 md:ml-6"
+      routerLink="/acerca-de"
+      >Acerca de</a
+    >
+    <a class="block md:inline-block mt-4 md:mt-0 md:ml-6" routerLink="/contacto"
+      >Contacto</a
+    >
   </div>
 </div>
