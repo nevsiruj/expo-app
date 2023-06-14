@@ -1,0 +1,11 @@
+/* Responsive styles */
+@media (max-width: 767px) {
+  .hidden {
+    display: none !important;
+  }
+}
+
+/* Hover styles */
+.hover\\:text-gray-200:hover {
+  color: #cbd5e0;
+}
